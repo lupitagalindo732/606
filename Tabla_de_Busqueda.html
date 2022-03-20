@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tabla de Busqueda</title>
+  </head>
+  <body>
+    <form action="<?php echo $server[PHP_GELF]" method="post">
+      <input type="text" name="direccion" placeholder="Domicilio" required>
+      <input type="date" name="dia,mes,año" placeholder="dia,mes,año" required>
+      <input type="text" name="Servicio" placeholder="Servicio" required>
+      <select name="Servicio">
+        <option value="Carpintero">
+        <option value="Plomero">
+        <option value="Electricista">
+        <option value="Cerrajero">
+        </option>
+      </select>
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="text" name="municipio" placeholder="Municipio" required>
+      <input type="time">
+      <input type="submit" name="registrar" placeholder="Registrar">
+    </form>
+
+  </body>
+</html>

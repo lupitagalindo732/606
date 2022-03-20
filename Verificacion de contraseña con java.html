@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <input type="text" name="usuario" id="Usuario" placeholder="Usuario" required>
+      <input type="password" name="password" id="password" placeholder="Contraseña" required>
+      <input type="password" name="cpassword" id="cpassword" placeholder="Confirma tu contraseña" required>
+      <input type="submit" name="validando" value="validar" onclick="Validar();">
+    </form>
+    <script>
+      function Validar(){
+        usuario = document.getElementById('Usuario').value;
+        if(usuario == ''){
+          alert("El campo usuario no puede estar vacio");
+        }
+        password = document.getElementById('password').value;
+        if (password == '') {
+          alert("El campo contraseña no puede estar vacio");
+        }
+        cpassword = document.getelementbyId('cpassword').value;
+         if (cpassword == '') {
+          alert("La confirmacion no puede estar vacia");
+        }
+        else{
+          if(password == cpassword){
+            return false;
+          }
+          alert("La contraseñas no coinciden, intentalo otra vez ");
+        }
+      }
+
+    </script>
+
+  </body>
+</html>

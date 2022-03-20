@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vocal o Consonante | Validacion con JavaScritpt</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <input type="text" id="letra" name="letra" placeholder="Ingresa una letra" required>
+      <input type="submit" value="validar" name="validando" onclick="Validar();">
+    </form>
+    <script>
+         function Validar(){
+           letras = document.getElementById("letra").value;
+               if(letras == ''){
+             alert("No has ingresado una letra, por favor digita una ");
+           }
+           else{
+             if(!isNaN(letras)){
+               alert("Dijistaste un numero, ingresa una letra ");
+             }
+             else{
+               switch(letras){
+                 case 'a':
+                 case 'e':
+                 case 'i':
+                 case 'o':
+                 case 'u':
+                 alert("La letra que dijitaste es: " + letras+ " y es una vocal");
+                 break;
+                 default:
+                    alert("La letra que dijitaste es: " + letras + " y es una consonante");
+               }
+             }
+           }
+         }
+    </script>
+  </body>
+</html>

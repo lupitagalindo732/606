@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SUMA DE DOS NUMEROS ENTEROS CON JAVA SCRIPT</title>
+  </head>
+  <body>
+    <h1>Suma de Numeros enteros</h1>
+    <p>Introduce dos numeros enteros en los campos de texto</p>
+    <form>
+      <input type="text" name="numero1" id="numero1"> + <input type="text" name="numero2" id="numero2">
+      <input type="button" value="Sumar" onclick="suma()">
+      <input type="reset" value="Borrar">
+    </form>
+    <script>
+      function suma(){
+        resultado = parseInt(numero1.value) + parseInt(numero2.value);
+        alert("El valor de la suma es: " + resultado);
+      }
+    </script>
+  </body>
+</html>
