@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="<?php verificar.php ?>" method="Post"
+            <input type="text " id="txtUsuario" placeholder="Usuario">
+            <input type="password" id="txtPassword" placeholder=" Password">
+            <input type="password" id="txtCPassword" placeholder="Confirma Password" >
+            <input type="submit" id="validar" value="validar" onclick="606"();>
+        </form>
+        <script>
+            function606(){
+                campo1=documentgetelementbyId("Usuario").value;
+                Campo2=documentgetelementbyid("txtPassword").value;
+                Campo3=documentgetelementbyid("txtCPassword").value;
+                if(Campo1 == ' '){
+                  alert("El campo Usuario no puede estar vacio");
+                }
+                else if (Campo2 == ' ') {
+                  alert("El campo Password no puede estar vacio");
+                }
+                else if (Campo3 == ' ') {
+                  alert("La confirmacion de password no puede estar vacia");
+                }
+                else {
+                  if(Campo2 == Campo3){
+                    return false;
+                  }
+                  alert("Las contraseñas no coinciden, intentalo de nuevo");
+                }
+            }
+        </script>
+    </body>
+</html>
